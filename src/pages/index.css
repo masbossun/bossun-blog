@@ -1,5 +1,7 @@
 a {
   color: #f087a4;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 blockquote {
