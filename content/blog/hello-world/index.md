@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: '2019-01-15T23:03:03.284Z'
+gitrepo: 'https://github.com/masbossun/bossun-blog/blob/master/content/blog/hello-world/index.md'
 ---
 
 So, h1 my name is Ryan Setiagi, but you can call me masbossun.

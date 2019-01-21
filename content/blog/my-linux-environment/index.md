@@ -1,10 +1,8 @@
 ---
 title: My Linux Environment
 date: '2019-01-19T23:03:03.284Z'
+gitrepo: 'https://github.com/masbossun/bossun-blog/blob/master/content/blog/my-linux-environment/index.md'
 ---
-
-![Photo by Sai Kiran Anagani on Unsplash](sai-kiran-anagani-555972-unsplash.jpg)
-Photo by [Sai Kiran Anagani](https://unsplash.com/@_imkiran) on [Unsplash](https://unsplash.com/)
 
 On this post i will tell you about my environment and experience of using linux system operations. Below is list of the content
 
@@ -20,6 +18,10 @@ On this post i will tell you about my environment and experience of using linux 
    - [Bonus](#bonus)
 
 ## <a name="experience-using-linux">Experience Using Linux</a>
+
+![Photo by Sai Kiran Anagani on Unsplash](sai-kiran-anagani-555972-unsplash.jpg)
+
+<p align="center">Photo by Sai Kiran Anagani on Unsplash</p>
 
 I have been using linux as my daily basis operating system for about 6 months from 2018. Actually i used to use windows-based operating system for about 8 years, from **windows xp** to **seven** to **8** to **8.1** and lastly **windows 10**. But in the middle year of 2016 i learned another operating system with \*NIX based kernel called Linux. My first linux distro that i dual-booted to my disk is Ubuntu (_i forgot the version of it_). Since then i get used to using terminal and get rid all of the GUI-things and change to CLI and i feel more powerful at that time, and that is true because i am feeling just like hacker (_LOL, all geeky kid dreams_).
 
@@ -72,6 +74,8 @@ For terminal i am currently using [Terminator](https://gnometerminator.blogspot.
   Inside my terminal i am using ZSH as my shell console, i choose zsh because it have a lot of useful plugins terminal.
 - [oh-my-zsh](https://ohmyz.sh/),
   There is a zsh framework such as oh-my-zsh to add some aesthetic and convenience to my terminal.
+- [spaceship](https://github.com/denysdovhan/spaceship-prompt),
+  zsh has a lot of themes from the community, and i use spaceship.
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting),
   The other plugins i use is zsh-syntax-highlighting to add more colors on my terminal.
 - [terminator-themes](https://github.com/EliverLara/terminator-themes),
@@ -100,7 +104,7 @@ Another development apps i have install is [Android Studio](https://developer.an
 
 ### <a name="wallpapers">Wallpapers</a>
 
-For wallpaper i usually take it from [Unsplash](https://unsplash.com) there is a lot of cool wallpapers/photos from a photographer. I basically choose wallpaper with some colors or minimalist look. From the people in [/r/unixporn](https://reddit.com/r/unixporn)
+For wallpaper i usually take it from [Unsplash](https://unsplash.com) there is a lot of cool wallpapers/photos from a photographer. I basically choose wallpaper with some colors or minimalist look. From the people in [/r/unixporn](https://reddit.com/r/unixporn) they said,
 
 > wallpaper is the bones of a desktop environment.
 

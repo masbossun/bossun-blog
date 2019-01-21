@@ -27,6 +27,10 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <br />
+        <p>
+          Edit this post on <a href={post.frontmatter.gitrepo}>github</a>
+        </p>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -80,6 +84,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        gitrepo
       }
     }
   }
