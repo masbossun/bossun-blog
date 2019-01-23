@@ -28,9 +28,14 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <br />
-        <p>
-          Edit this post on <a href={post.frontmatter.gitrepo}>github</a>
-        </p>
+        <blockquote>
+          <p>
+            If you find any misleading information or a typo or some grammar
+            issue, feel free to edit this post on{' '}
+            <a href={post.frontmatter.gitrepo}>github</a> thanks 👏👏👏.
+          </p>
+        </blockquote>
+
         <hr
           style={{
             marginBottom: rhythm(1),

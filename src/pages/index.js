@@ -1,13 +1,25 @@
 import React from 'react'
 import { Link as gatsbyLink, graphql } from 'gatsby'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Colors from '../utils/colors'
-import './index.css'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
+
+const GlobalStyle = createGlobalStyle`
+  a {
+    color: ${Colors.accentColor};
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: bold;
+  }
+
+  blockquote {
+    color: ${Colors.anotherAccentColor};
+  }
+`
 
 const H3 = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
@@ -26,6 +38,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <GlobalStyle />
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
