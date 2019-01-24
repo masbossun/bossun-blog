@@ -1,10 +1,25 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { createGlobalStyle } from 'styled-components'
+import Colors from '../utils/colors'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+
+const GlobalStyle = createGlobalStyle`
+  a {
+    color: ${Colors.accentColor};
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: bold;
+  }
+
+  blockquote {
+    color: ${Colors.anotherAccentColor};
+  }
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,6 +29,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <GlobalStyle />
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
         <p
