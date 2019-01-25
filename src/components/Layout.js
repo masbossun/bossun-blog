@@ -11,9 +11,9 @@ const MainHeader = styled.h1`
   color: ${Colors.accentColor};
 `
 
-const BlogPostHeader = styled.h2`
-  font-family: Montserrat, sans-serif;
+const BlogPostHeader = styled.h3`
   margin-top: 0;
+  margin-bottom: ${rhythm(0.5)};
 `
 
 const Link = styled(gatsbyLink)`

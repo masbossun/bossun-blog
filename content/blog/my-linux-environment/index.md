@@ -19,9 +19,9 @@ On this post i will tell you about my environment and experience of using linux 
 
 ## <a name="experience-using-linux">Experience Using Linux</a>
 
-![Photo by Sai Kiran Anagani on Unsplash](sai-kiran-anagani-555972-unsplash.jpg)
-
-<p align="center">Photo by Sai Kiran Anagani on Unsplash</p>
+<p style="width: 100%; font-size:80%; text-align:center;">
+<img src="sai-kiran-anagani-555972-unsplash.jpg" alt="Unsplash Photo" width="100%" style="padding-bottom:0.5em;" />
+Photo by Sai Kiran Anagani on Unsplash</p>
 
 I have been using linux as my daily basis operating system for about 6 months from 2018. Actually i used to use windows-based operating system for about 8 years, from **windows xp** to **seven** to **8** to **8.1** and lastly **windows 10**. But in the middle year of 2016 i learned another operating system with \*NIX based kernel called Linux. My first linux distro that i dual-booted to my disk is Ubuntu (_i forgot the version of it_). Since then i get used to using terminal and get rid all of the GUI-things and change to CLI and i feel more powerful at that time, and that is true because i am feeling just like hacker (_LOL, all geeky kid dreams_).
 
@@ -41,9 +41,9 @@ In linux there is a lot of desktop types. We called it DE or **Desktop Environme
 
 My choice of Desktop Environment right now is GNOME, i use it because of it simplicity when it comes to productivity aspects. GNOME are not so powerful if we talk about the appearance customization, but if you want, you can totally make GNOME more like yours. I have already use any other DE's before, like **openbox**, i like when i change the border style and the menu style, and i have using **i3 / i3-gaps**, i like when i change the color style and the bar style.
 
-![alone](SS.png)
-
-<p align="center">Alone, my i3-themed desktop</p>
+<p style="width: 100%; font-size:80%; text-align:center;">
+<img src="SS.png" alt="alone" width="100%" style="padding-bottom:0.5em;" />
+Alone, my i3-themed desktop</p>
 
 Back to my GNOME, i am use [Gnome-Tweak-Tool](https://wiki.gnome.org/action/show/Apps/Tweaks?action=show&redirect=GnomeTweakTool) to change all the aspects on my Desktop. below is the specification of my GNOME Desktop.
 
@@ -67,9 +67,9 @@ Back to my GNOME, i am use [Gnome-Tweak-Tool](https://wiki.gnome.org/action/show
 
 ### <a name="terminal">Terminal</a>
 
-![my-terminal](terminal.png)
-
-<p align="center">my terminal</p>
+<p style="width: 100%; font-size:80%; text-align:center;">
+<img src="terminal.png" alt="my terminal" width="100%" style="padding-bottom:0.5em;" />
+my terminal</p>
 
 Terminal is where i use to call a command or scripts, in desktop like i3 or awesome or openbox etc using terminal is a must. because when we want to adjust something we need to use terminal to change the appearance and config. And down below is my environment in term of terminal.
 For terminal i am currently using [Terminator](https://gnometerminator.blogspot.com/p/introduction.html), terminator is terminal that have ability to grid many terminal in one window. But i am not really using that function a lot, because i rather to use different window for different terminal console. Below is list of plugins inside my terminal.
@@ -89,9 +89,9 @@ For terminal i am currently using [Terminator](https://gnometerminator.blogspot.
 
 ### <a name="development-apps">Development Apps</a>
 
-![my-vscode](vscode.png)
-
-<p align="center">the screenshot of my vscode while editing this post</p>
+<p style="width: 100%; font-size:80%; text-align:center;">
+<img src="vscode.png" alt="my vscode" width="100%" style="padding-bottom:0.5em;" />
+the screenshot of my vscode while editing this post</p>
 
 Right now i am work for many web-related apps using javascript and it's framework like React or React Native. In my development environment, my main code editor is Visual Studio Code or VSCode, i am use vscode because of recommendation of many developer out there, and when i am using it for like a year now i am happy with it, i am using a lot extensions and here i list them below.
 
@@ -116,9 +116,9 @@ For wallpaper i usually take it from [Unsplash](https://unsplash.com) there is a
 
 To create a configuration or customization we choose the color scheme from wallpaper and implement it to all the aspects of the desktop. And below is my wallpaper that i use right now.
 
-![my-wallpaper](wallpaper.png)
-
-<p align="center">Screenshot of my desktop right now</p>
+<p style="width: 100%; font-size:80%; text-align:center;">
+<img src="wallpaper.png" alt="alone" width="100%" style="padding-bottom:0.5em;" />
+Screenshot of my desktop right now</p>
 
 ### <a name="games">Games</a>
 

@@ -9,6 +9,7 @@ import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
 const GlobalStyle = createGlobalStyle`
+
   a {
     color: ${Colors.accentColor};
     text-decoration: none;
@@ -19,9 +20,10 @@ const GlobalStyle = createGlobalStyle`
   blockquote {
     color: ${Colors.anotherAccentColor};
   }
+
 `
 
-const H3 = styled.h3`
+const PostTitle = styled.h1`
   margin-bottom: ${rhythm(1 / 4)};
 `
 
@@ -48,9 +50,9 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <H3>
+              <PostTitle>
                 <Link to={node.fields.slug}>{title}</Link>
-              </H3>
+              </PostTitle>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>

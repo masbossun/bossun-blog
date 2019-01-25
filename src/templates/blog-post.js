@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Colors from '../utils/colors'
 
 import Bio from '../components/Bio'
@@ -9,6 +9,7 @@ import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
 const GlobalStyle = createGlobalStyle`
+
   a {
     color: ${Colors.accentColor};
     text-decoration: none;
@@ -19,6 +20,14 @@ const GlobalStyle = createGlobalStyle`
   blockquote {
     color: ${Colors.anotherAccentColor};
   }
+
+  .gatsby-resp-image-wrapper{
+    max-width: 100% !important;
+  }
+`
+
+const BlogPostTitle = styled.h1`
+  color: ${Colors.accentColor};
 `
 
 class BlogPostTemplate extends React.Component {
@@ -31,7 +40,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <GlobalStyle />
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
+        <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
         <p
           style={{
             ...scale(-1 / 5),
