@@ -1,8 +1,10 @@
 const colors = {
-  backgroundColor: '#19323C',
+  backgroundColor: '#282831',
+  darkerBackgroundColor: `#24242e`,
   baseTextColor: '#F3F7F0',
-  accentColor: '#F2545B',
-  anotherAccentColor: '#A93F55',
+  accentColor: '#FD7736',
+  secondaryAccentColor: '#bebeef',
+  secondarySoftAccentColor: `#7272A0`,
 }
 
 export default colors

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled, { createGlobalStyle } from 'styled-components'
 import Colors from '../utils/colors'
+import '../utils/duotone-space.css'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -18,11 +19,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    color: ${Colors.anotherAccentColor};
+    color: ${Colors.secondaryAccentColor};
   }
 
   .gatsby-resp-image-wrapper{
     max-width: 100% !important;
+  }
+
+  ::selection {
+    color: ${Colors.secondarySoftAccentColor};
+    background-color: ${Colors.darkerBackgroundColor} !important;
   }
 `
 
@@ -53,7 +59,7 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <br />
-        <blockquote>
+        <blockquote style={{ marginTop: rhythm(2) }}>
           <p>
             If you find any misleading information or a typo or some grammar
             issue, feel free to edit this post on{' '}

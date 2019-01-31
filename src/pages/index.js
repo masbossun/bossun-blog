@@ -18,18 +18,22 @@ const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    color: ${Colors.anotherAccentColor};
+    color: ${Colors.secondaryAccentColor};
   }
 
+  ::selection {
+    color: ${Colors.secondarySoftAccentColor};
+    background-color: ${Colors.darkerBackgroundColor};
+  }
 `
 
-const PostTitle = styled.h1`
+const PostTitle = styled.h2`
   margin-bottom: ${rhythm(1 / 4)};
 `
 
 const Link = styled(gatsbyLink)`
   box-shadow: none;
-  color: ${Colors.anotherAccentColor};
+  color: ${Colors.secondaryAccentColor};
 `
 
 class BlogIndex extends React.Component {
@@ -75,7 +79,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 87)
           fields {
             slug
           }
