@@ -4,18 +4,7 @@ date: '2019-01-19T23:03:03.284Z'
 gitrepo: 'https://github.com/masbossun/bossun-blog/blob/master/content/blog/my-linux-environment/index.md'
 ---
 
-On this post i will tell you about my environment and experience of using linux system operations. Below is list of the content
-
-1. [Experience Using Linux](#experience-using-linux)
-2. [My Linux Environment](#my-linux-environment)
-   - [Desktop Environment](#desktop-environment)
-   - [Terminal](#terminal)
-   - [Development Apps](#development-apps)
-   - [File Manager](#file-manager)
-   - [Wallpapers](#wallpapers)
-   - [Games](#games)
-   - [Conclusion](#conclusion)
-   - [Bonus](#bonus)
+On this post i would like to tell you about my environment and experience of using linux system operations.
 
 ## <a name="experience-using-linux">Experience Using Linux</a>
 

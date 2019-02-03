@@ -47,7 +47,14 @@ class BlogIndex extends React.Component {
         <GlobalStyle />
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[
+            `blog`,
+            `gatsby`,
+            `javascript`,
+            `react`,
+            `Developer`,
+            `Linux`,
+          ]}
         />
         <Bio />
         {posts.map(({ node }) => {

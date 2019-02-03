@@ -6,7 +6,7 @@ import { rhythm } from '../utils/typography'
 
 const Container = styled.div`
   display: flex;
-  margin-bottom: ${rhythm(2.5)};
+  margin-top: ${rhythm(2.5)};
 `
 
 const Img = styled.img`
@@ -22,7 +22,7 @@ function Bio() {
     <Container>
       <Img src={profilePic} alt={'Ryan Setiagi'} />
       <p>
-        Written by <strong>Ryan Setiagi</strong>
+        Written by <strong>Ryan Setiagi</strong>,
         <br />
         You should look at me on
         {` `}
