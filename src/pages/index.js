@@ -35,7 +35,6 @@ const Link = styled(gatsbyLink)`
   box-shadow: none;
   color: ${Colors.secondaryAccentColor};
 `
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
