@@ -26,7 +26,7 @@ function Bio() {
         <br />
         You should look at me on
         {` `}
-        <a href={'https://twitter.com/ryan_setiagi'}>Twitter</a>
+        <a href={'https://twitter.com/masbossun'}>Twitter</a>
         {` `}
         or
         {` `}
