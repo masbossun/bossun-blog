@@ -35,6 +35,7 @@ const Link = styled(gatsbyLink)`
   box-shadow: none;
   color: ${Colors.secondaryAccentColor};
 `
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -45,7 +46,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <GlobalStyle />
         <SEO
-          title="All posts"
+          title="masbosun blog posts"
           keywords={[
             `blog`,
             `gatsby`,
