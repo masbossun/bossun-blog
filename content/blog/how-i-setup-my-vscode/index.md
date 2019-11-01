@@ -63,12 +63,5 @@ vscode are allowed us to change the settings or the configuration. To fit my nee
 }
 ```
 
-## Styling
-
-As you can see on my settings above, i change the color theme with [Panda Syntax](https://panda.siamak.work/) and with [vscode icons](). About fonts i am using `Fura Code Nerd Font`, it is a patched font from `Fira Code` with ligatures.
-
-<p style="width: 100%; font-size:80%; text-align:center;">
-<img src="carbon.png" alt="my vscode" width="100%" style="padding-bottom:0.5em;" />Colors of this blog</p>
-
 <br/>
 I think that is all of my setup, i hope it can be useful for someone. Thanks.

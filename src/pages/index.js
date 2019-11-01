@@ -1,40 +1,10 @@
-import React from 'react'
-import { Link as gatsbyLink, graphql } from 'gatsby'
-import styled, { createGlobalStyle } from 'styled-components'
-import Colors from '../utils/colors'
+import React from "react"
+import { Link, graphql } from "gatsby"
+import "../utils/styles.scss"
 
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
-
-const GlobalStyle = createGlobalStyle`
-
-  a {
-    color: ${Colors.accentColor};
-    text-decoration: none;
-    box-shadow: none;
-    font-weight: bold;
-  }
-
-  blockquote {
-    color: ${Colors.secondaryAccentColor};
-  }
-
-  ::selection {
-    color: ${Colors.secondarySoftAccentColor};
-    background-color: ${Colors.darkerBackgroundColor};
-  }
-`
-
-const PostTitle = styled.h2`
-  margin-bottom: ${rhythm(1 / 4)};
-`
-
-const Link = styled(gatsbyLink)`
-  box-shadow: none;
-  color: ${Colors.secondaryAccentColor};
-`
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class BlogIndex extends React.Component {
   render() {
@@ -44,7 +14,6 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <GlobalStyle />
         <SEO
           title="personal blog"
           keywords={[
@@ -60,12 +29,17 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <PostTitle>
-                <Link to={node.fields.slug}>{title}</Link>
-              </PostTitle>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            <div key={node.fields.slug} class="base">
+              <h2 className="base__postTitle">
+                <Link className="base__link" to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h2>
+              <small className="base__blogDate">{node.frontmatter.date}</small>
+              <p
+                className="base__blogOverview"
+                dangerouslySetInnerHTML={{ __html: "&#xE08B; " + node.excerpt }}
+              />
             </div>
           )
         })}
@@ -86,7 +60,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 87)
+          excerpt(pruneLength: 250)
           fields {
             slug
           }

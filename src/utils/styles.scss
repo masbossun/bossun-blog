@@ -1,0 +1,158 @@
+@import "../../node_modules/rfs/scss";
+@import "./colors";
+@import "../utils/fonts/inter.css";
+@import "../utils/hemisu-light.css";
+
+a {
+  color: $accentColor;
+  text-decoration: none;
+  box-shadow: none;
+  font-weight: 400;
+}
+
+p {
+  @include margin-bottom(1.75rem !important);
+}
+
+blockquote {
+  color: $secondaryAccentColor;
+  border-left: 0.32813rem solid hsla(0, 0%, 0%, 0.9);
+  margin-left: -1.75rem;
+  margin-right: 1.75rem;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.42188rem;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.75rem;
+  font-size: 1.20112rem;
+  line-height: 1.75rem;
+  font-style: italic;
+}
+
+::selection {
+  color: $secondarySoftAccentColor;
+  background-color: $darkerBackgroundColor !important;
+}
+
+.gatsby-resp-image-wrapper {
+  max-width: 100% !important;
+}
+
+.bodyText {
+  line-height: 1.75;
+  width: 55px * (18 / 1.68);
+}
+
+body {
+  font-family: Inter;
+  background: $backgroundColor;
+}
+
+.blogPost {
+  &__title {
+    color: $accentColor;
+    font-weight: 900;
+    font-style: italic;
+    @include font-size(3rem !important);
+  }
+  &__bodyText {
+    @include font-size(18px !important);
+    max-width: 100%;
+    @extend .bodyText;
+  }
+  &__date {
+    font-weight: 800;
+  }
+}
+
+.base {
+  @include margin-bottom(3rem !important);
+
+  &__postTitle {
+    @include font-size(26px !important);
+    @include margin-bottom(10px !important);
+  }
+
+  &__link {
+    box-shadow: none;
+    color: $secondaryAccentColor;
+    font-weight: 900;
+  }
+
+  &__blogOverview {
+    @include font-size(16px !important);
+    @extend .bodyText;
+    max-width: 100%;
+  }
+
+  &__blogDate {
+    @include padding(1px 4px !important);
+    background-color: $accentColor;
+    font-weight: 600;
+    font-style: italic;
+    color: $backgroundColor;
+  }
+}
+
+.layout {
+  &__mainHeader {
+    @include margin-top(1rem !important);
+    @include margin-bottom(2rem !important);
+
+    &__text {
+      @include font-size(4rem !important);
+      color: $accentColor;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+
+  &__blogpostHeader {
+    @include margin-top(1rem !important);
+    @include margin-bottom(3rem !important);
+
+    &__text {
+      @include font-size(2rem !important);
+      box-shadow: none;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 900;
+    }
+  }
+
+  &__pageContainer {
+    background: $backgroundColor;
+    color: $baseTextColor;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    @include rfs(42rem, max-width);
+  }
+
+  &__footer {
+    @include margin-top(20px !important);
+  }
+}
+
+.bio {
+  &__container {
+    display: flex;
+    align-items: center;
+    @include margin-bottom(4rem !important);
+  }
+
+  &__image {
+    @include margin-right(1rem !important);
+    @include rfs(10px, width);
+    @include rfs(10px, height);
+    @include rfs(100%, border-radius);
+  }
+
+  &__info {
+    @include margin(0 !important);
+  }
+}

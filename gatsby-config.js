@@ -1,12 +1,13 @@
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Masbossun Blog`,
     author: `Ryan Setiagi`,
     description: `Blog about some of my knowledge`,
     siteUrl: `https://masbossun.web.id/`,
     social: {
-      twitter: `ryan_setiagi`,
-      github: `masbossun`,
+      twitter: `https://twitter.com/masbossun`,
+      github: `https://github.com/masbossun`,
     },
   },
   plugins: [
@@ -29,20 +30,34 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              maxWidth: 756,
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          `gatsby-remark-prismjs`,
         ],
       },
     },
@@ -69,11 +84,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    `gatsby-plugin-sass`,
   ],
 }
