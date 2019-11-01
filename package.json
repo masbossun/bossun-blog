@@ -40,7 +40,8 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "shelljs": "^0.8.3"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -59,5 +60,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "bin": {
+    "blog-generator": "./bin/blog-generator.js",
+    "push-production": "./bin/push-production.js"
   }
 }
